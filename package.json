@@ -5,6 +5,6 @@
   "main": "./plugins/opencode/index.js",
   "files": [
     "plugins/opencode/index.js",
-    "plugins/opencode/skills/**/*"
+    "skills/**/*"
   ]
 }

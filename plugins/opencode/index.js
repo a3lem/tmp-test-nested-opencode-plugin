@@ -7,12 +7,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
  * OpenCode plugin: registers the bundled skills/ directory so OpenCode
  * discovers all SKILL.md files shipped with this package.
  *
- * Install from a GitHub monorepo:
- *   { "plugin": ["github:user/repo#main&path:plugins/opencode"] }
+ * Install from GitHub:
+ *   { "plugin": ["github:a3lem/tmp-test-nested-opencode-plugin"] }
+ *
+ * index.js lives at plugins/opencode/index.js; skills/ lives at the repo
+ * root, two levels up.
  */
 export const SpexlSkillsPlugin = async () => ({
   config: async (config) => {
-    const skillPath = path.join(__dirname, "skills");
+    const skillPath = path.join(__dirname, "../../skills");
 
     // Current key
     config.skills = config.skills || {};
