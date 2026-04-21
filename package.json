@@ -1,0 +1,10 @@
+{
+  "name": "opencode-spexl-skills",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./plugins/opencode/index.js",
+  "files": [
+    "plugins/opencode/index.js",
+    "plugins/opencode/skills/**/*"
+  ]
+}
